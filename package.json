@@ -2,6 +2,10 @@
   "name": "@imagepix/client",
   "version": "0.0.1",
   "description": "Client library of imagepix that resize and convert images dynamically.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s12m/imagepix-client.git"
+  },
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
