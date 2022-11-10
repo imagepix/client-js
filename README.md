@@ -20,7 +20,7 @@ npm install @imagepix/client
 
 Get imagepix url to resize image keep aspect ratio.
 
-```ts
+```js
 import { getResizeToFitUrl } from '@imagepix/client'
 getResizeToFitUrl('sample/landscape.png', {
   width: 300,
@@ -34,7 +34,7 @@ https://demo.imagepix.app/fit/300/300/webp/80/sample/landscape.png
 
 When you set environment variable `IMAGEPIX_SUBDOMAIN`, you can also write following:
 
-```ts
+```js
 getResizeToFitUrl('sample/landscape.png', {
   width: 300,
   height: 300,
