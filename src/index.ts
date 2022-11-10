@@ -11,7 +11,7 @@ export type Options = {
   subdomain?: string
 }
 
-export function getResizeToFitUrl(path: string, params: ResizeToFitParams, options?: Options) {
+export function getResizeToFitUrl(path: string, params: ResizeToFitParams, options?: Options): string {
   const { width, height, format, quality } = params
 
   return `${getBaseUrl(options)}/fit/${width}/${height}/${format}/${quality}/${path}`

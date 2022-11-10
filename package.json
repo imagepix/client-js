@@ -11,6 +11,9 @@
   "scripts": {
     "test": "jest",
     "coverage:web": "http-server -o coverage/lcov-report",
+    "lint": "run-s lint:*",
+    "lint:eslint": "eslint --fix --max-warnings 0 .",
+    "lint:prettier": "prettier --write --loglevel warn .",
     "prebuild": "rimraf dist",
     "build": "run-p build:*",
     "build:common": "tsc",
@@ -27,12 +30,20 @@
     "@jest/types": "^29.3.1",
     "@types/jest": "^29.2.2",
     "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
     "http-server": "^14.1.1",
     "jest": "^29.3.1",
     "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }

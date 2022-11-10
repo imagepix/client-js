@@ -5,13 +5,15 @@ describe('getResizeToFillUrl', () => {
     width: 320,
     height: 180,
     format: 'webp',
-    quality: 80
+    quality: 80,
   }
 
   describe('subdomain', () => {
     describe('when set subdomain option', () => {
       it('returns imagepix url', () => {
-        const url = getResizeToFitUrl('uploads/test.png', params, { subdomain: 'test' })
+        const url = getResizeToFitUrl('uploads/test.png', params, {
+          subdomain: 'test',
+        })
         expect(url).toBe('https://test.imagepix.app/fit/320/180/webp/80/uploads/test.png')
       })
     })
