@@ -1,6 +1,6 @@
 {
   "name": "@imagepix/client",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Client library of imagepix that resize and convert images dynamically.",
   "repository": {
     "type": "git",
