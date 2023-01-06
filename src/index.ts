@@ -12,6 +12,10 @@ export type ResizeToFillParams = ResizeToFitParams & {
   gravity: Gravity
 }
 
+export type ResizeToFillPadParams = ResizeToFillParams & {
+  background: string
+}
+
 export type Options = {
   subdomain?: string
 }
@@ -25,7 +29,13 @@ export function getResizeToFitUrl(path: string, params: ResizeToFitParams, optio
 export function getResizeToFillUrl(path: string, params: ResizeToFillParams, options?: Options): string {
   const { width, height, gravity, format, quality } = params
 
-  return `${getBaseUrl(options)}/fit/${width}/${height}/${gravity}/${format}/${quality}/${path}`
+  return `${getBaseUrl(options)}/fill/${width}/${height}/${gravity}/${format}/${quality}/${path}`
+}
+
+export function getResizeToFillPadUrl(path: string, params: ResizeToFillPadParams, options?: Options): string {
+  const { width, height, gravity, background, format, quality } = params
+
+  return `${getBaseUrl(options)}/fill_pad/${width}/${height}/${gravity}/${background}/${format}/${quality}/${path}`
 }
 
 function getBaseUrl(options?: Options) {

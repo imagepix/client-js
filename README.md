@@ -58,7 +58,7 @@ getResizeToFillUrl('sample/landscape.png', {
 }, { subdomain: 'demo' })
 ```
 
-https://demo.imagepix.app/fit/300/300/webp/80/sample/landscape.png
+https://demo.imagepix.app/fill/300/300/c/webp/80/sample/landscape.png
 
 When you set environment variable `IMAGEPIX_SUBDOMAIN`, you can also write following:
 
@@ -67,6 +67,37 @@ getResizeToFillUrl('sample/landscape.png', {
   width: 300,
   height: 300,
   gravity: 'c',
+  format: 'webp',
+  quality: 80
+})
+```
+
+#### Resize to fill_pad
+
+Get imagepix url to resize image and fill background.
+
+```js
+import { getResizeToFillPadUrl } from '@imagepix/client'
+getResizeToFillPadUrl('sample/landscape.png', {
+  width: 300,
+  height: 300,
+  gravity: 'c',
+  background: 'red',
+  format: 'webp',
+  quality: 80
+}, { subdomain: 'demo' })
+```
+
+https://demo.imagepix.app/fill_pad/300/300/c/red/webp/80/sample/landscape.png
+
+When you set environment variable `IMAGEPIX_SUBDOMAIN`, you can also write following:
+
+```js
+getResizeToFillPadUrl('sample/landscape.png', {
+  width: 300,
+  height: 300,
+  gravity: 'c',
+  background: 'red',
   format: 'webp',
   quality: 80
 })
