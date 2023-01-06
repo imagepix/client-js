@@ -43,6 +43,35 @@ getResizeToFitUrl('sample/landscape.png', {
 })
 ```
 
+#### Resize to fill
+
+Get imagepix url to resize and crop image.
+
+```js
+import { getResizeToFillUrl } from '@imagepix/client'
+getResizeToFillUrl('sample/landscape.png', {
+  width: 300,
+  height: 300,
+  gravity: 'c',
+  format: 'webp',
+  quality: 80
+}, { subdomain: 'demo' })
+```
+
+https://demo.imagepix.app/fit/300/300/webp/80/sample/landscape.png
+
+When you set environment variable `IMAGEPIX_SUBDOMAIN`, you can also write following:
+
+```js
+getResizeToFillUrl('sample/landscape.png', {
+  width: 300,
+  height: 300,
+  gravity: 'c',
+  format: 'webp',
+  quality: 80
+})
+```
+
 ## Supported format
 
 ### Input
