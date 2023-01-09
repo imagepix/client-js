@@ -4,13 +4,17 @@
 
 # imagepix client
 
-Resize and convert images dynamically using imagepix.
+Resize, crop and convert images dynamically using imagepix.
+
+## Links
+
+- [TypeDoc](https://imagepix.github.io/client-js/)
 
 ## Getting Started
 
 ### Installation
 
-```console
+```sh
 npm install @imagepix/client
 ```
 
@@ -18,7 +22,7 @@ npm install @imagepix/client
 
 #### Resize to fit
 
-Get imagepix url to resize image keep aspect ratio.
+Get an imagepix url to resize image keep aspect ratio.
 
 ```js
 import { getResizeToFitUrl } from '@imagepix/client'
@@ -45,7 +49,7 @@ getResizeToFitUrl('sample/landscape.png', {
 
 #### Resize to fill
 
-Get imagepix url to resize and crop image.
+Get an imagepix url to resize and crop image.
 
 ```js
 import { getResizeToFillUrl } from '@imagepix/client'
@@ -74,7 +78,7 @@ getResizeToFillUrl('sample/landscape.png', {
 
 #### Resize to fill_pad
 
-Get imagepix url to resize image and fill background.
+Get an imagepix url to resize image and fill background.
 
 ```js
 import { getResizeToFillPadUrl } from '@imagepix/client'
@@ -121,4 +125,4 @@ getResizeToFillPadUrl('sample/landscape.png', {
 
 ## License
 
-imagepix client is licensed under a [MIT License](./LICENSE)
+imagepix client is licensed under a [MIT License](./LICENSE).
