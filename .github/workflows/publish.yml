@@ -1,0 +1,20 @@
+name: Publish Package to npmjs
+on:
+  release:
+    types: [created]
+permissions:
+  id-token: write # Required for OIDC
+  contents: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .node-version
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm install -g npm@latest
+      - run: npm ci
+      - run: npm run build
+      - run: npm publish
