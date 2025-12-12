@@ -8,6 +8,7 @@ Resize, crop and convert images dynamically using imagepix.
 
 ## Links
 
+- [imagepix](https://imagepix.app)
 - [TypeDoc](https://imagepix.github.io/client-js/)
 
 ## Getting Started
