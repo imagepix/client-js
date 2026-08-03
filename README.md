@@ -114,15 +114,27 @@ getResizeToFillPadUrl('sample/landscape.png', {
 
 - `jpeg`
 - `png`
-- `webp`
-- `gif`
+- `webp` (including animated)
+- `gif` (including animated)
+- `avif`
+- `jpeg xl`
+- `svg`
+- `ico`
+- `heif` / `heic`
+- `bmp`
+- `tiff`
 
 ### Output
 
 - `jpeg`
 - `png`
-- `webp`
-- `gif`
+- `webp` (including animated)
+- `gif` (including animated)
+
+## Parameter limits
+
+- `width` / `height`: 1 to 2560
+- `quality`: 1 to 100
 
 ## License
 

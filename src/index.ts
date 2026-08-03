@@ -23,12 +23,12 @@ export type Gravity = 'c' | 'n' | 'e' | 's' | 'w' | 'ne' | 'se' | 'sw' | 'nw'
  */
 export interface ResizeToFitParams {
   /**
-   * Allowed from 1 to 1920.
+   * Allowed from 1 to 2560.
    */
   width: number
 
   /**
-   * Allowed from 1 to 1920.
+   * Allowed from 1 to 2560.
    */
   height: number
 
